@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | ShopEase Pharmacy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-prescription-bottle-medical"></i>
+        ShopEase Pharmacy
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Medicines</a>
+
+        <a href="cart.html">Cart</a>
+
+    </nav>
+
+</header>
+
+<section class="login-section">
+
+    <div class="login-card">
+
+        <div class="login-icon">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+        </div>
+
+        <h2>Login with OTP</h2>
+
+        <p>
+
+            Enter your mobile number to receive a verification code.
+
+        </p>
+
+        <input
+            type="tel"
+            id="phoneNumber"
+            placeholder="+923001234567">
+
+        <div id="recaptcha-container"></div>
+
+        <button id="sendOtpBtn">
+
+            Send OTP
+
+        </button>
+
+        <input
+            type="text"
+            id="otpCode"
+            placeholder="Enter 6-digit OTP">
+
+        <button id="verifyOtpBtn">
+
+            Verify OTP
+
+        </button>
+
+        <p class="login-note">
+
+            We will never share your phone number with anyone.
+
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 ShopEase Pharmacy | All Rights Reserved
+
+    </p>
+
+</footer>
+
+<script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>
