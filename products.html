@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-store"></i> ShopEase
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="products.html" class="active">Products</a>
+
+<a href="buyer.html">Buyer</a>
+
+<a href="vendor.html">Vendor</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="login.html">Login</a>
+
+</nav>
+
+<div class="icons">
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+</div>
+
+</header>
+
+<section class="page-title">
+
+<h1>Our Products</h1>
+
+<p>Discover quality products from trusted vendors.</p>
+
+</section>
+
+<section class="search-section">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search products..."
+onkeyup="searchProducts()">
+
+<select id="categoryFilter" onchange="filterProducts()">
+
+<option value="all">All Categories</option>
+
+<option value="Pain Relief">Pain Relief</option>
+
+<option value="Antibiotics">Antibiotics</option>
+
+
+<option value="Vitamins">Vitamins</option>
+
+<option value="Healthcare">Healthcare</option>
+
+<option value="Medical Devices">Medical Devices</option>
+
+</select>
+
+</section>
+
+<section class="products">
+
+<div id="productContainer" class="product-grid">
+
+<!-- Products will appear here -->
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 ShopEase. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/products.js"></script>
