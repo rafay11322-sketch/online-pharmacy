@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | ShopEase Pharmacy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-prescription-bottle-medical"></i>
+        ShopEase Pharmacy
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Medicines</a>
+
+        <a href="buyer.html">My Account</a>
+
+        <a href="login.html">Login</a>
+
+    </nav>
+
+</header>
+
+<section class="page-title">
+
+    <h1>Your Shopping Cart</h1>
+
+    <p>Review your medicines before checkout.</p>
+
+</section>
+
+<div class="cart-container">
+
+    <div class="cart-items">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Medicine</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Remove</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cartTable">
+
+                <!-- Products appear here -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+
+            <span>Subtotal</span>
+
+            <span id="subtotal">Rs. 0</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Delivery</span>
+
+            <span id="delivery">Rs. 200</span>
+
+        </div>
+
+        <div class="summary-row total">
+
+            <span>Total</span>
+
+            <span id="grandTotal">Rs. 0</span>
+
+        </div>
+
+        <button onclick="window.location='checkout.html'">
+
+            Proceed to Checkout
+
+        </button>
+
+        <a href="products.html">
+
+            <button class="continue">
+
+                Continue Shopping
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+
+        © 2026 ShopEase Pharmacy | All Rights Reserved
+
+    </p>
+
+</footer>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>
